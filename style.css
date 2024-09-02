@@ -1,0 +1,134 @@
+body{
+    background-color: #eee;
+    font-family: sans-serif;
+    margin: 0;
+}
+.secciones{
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px #dcd3d3;
+}
+.cabecera {
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+
+}
+.p1 {
+    font-size: small;
+    text-decoration:underline;
+    text-transform: capitalize;
+}
+
+blockquote{
+    font-size: small;
+    font-style: italic;
+    color: #777474;
+    background-color: #eee;
+    padding: 8px;
+    border-left: 5px solid #777474;
+    margin-left: 0;
+}
+
+.subt{
+    font-size: medium;
+    padding-bottom: 8px;
+    border-bottom: solid black 1.5px;
+}
+
+.caja1 {
+    font-size: small;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 5px 4px 10px 0px grey;
+}
+.caja2 {
+    font-size: small;
+    border: solid black 3px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 5px 4px 10px 0px grey;
+    background-color: rgb(168, 252, 215);
+}
+
+.relativo{
+    position: relative;
+    font-size: small;
+    background-color: rgb(197, 249, 244);
+    padding: 5px;
+    left: 5px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.absoluto{
+    position: absolute;
+    color: white;
+    background-color: rgb(8, 164, 135);
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    margin-left: 38rem;
+    top: 20px;
+}
+
+@media screen and (max-width:768px){
+    body {
+        background-color: rgb(230, 202, 229);
+    }
+    .cabecera{
+        font-size: 1rem;
+    }
+    .absoluto{
+        position: relative;
+        margin-left: 70%;
+
+    }
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   gap: 1rem;
+}   
+.grid-item{
+    font-size: small;
+    color: white;
+    background-color: rgb(44, 147, 202);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.animacion{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transition: .4s ease-in-out;
+}
+.animacion:hover{
+    background-color: green;
+}
+
+.mover{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    margin-top: 10px;
+    animation: circulo 2s infinite;
+}   
+
+@keyframes circulo {
+    0%{transform: translateX(0px);    }
+    50%{transform: translateX(100%);    }
+    100%{transform: translateX(0px);    }
+}
